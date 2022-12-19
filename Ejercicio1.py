@@ -1,5 +1,5 @@
 def resolver_nonograma(filas,columnas,pistf,pistc):
-    matriz = [[0 for k in range(columnas)] for k in range(filas)]
+    matriz = [[0 for _ in range(columnas)] for _ in range(filas)]
 
     for i in range(filas):
         usar_pistas(matriz,i,pistc[i])
@@ -17,6 +17,7 @@ def usar_pistas(matriz,index,pistas,a = True):
                 matriz[i][index] = 1
             i = i + 1
         i = i + 1
+    return matriz
     
 
     
